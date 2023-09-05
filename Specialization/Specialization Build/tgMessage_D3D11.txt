@@ -1,0 +1,171 @@
+Initializing tgCCore
+Initializing tgCD3D11
+Initializing tgCFileSystem
+Initializing tgCCameraManager
+Initializing tgCShaderManager
+Initializing tgCTextureManager
+Initializing tgCLightManager
+Initializing tgCWorldManager
+Initializing tgCModelManager
+Initializing tgCAnimationManager
+Initializing tgCQuadManager
+Initializing tgCSpriteManager
+Initializing tgCSplineGroupManager
+Initializing tgCFontManager
+Initializing tgCDebugManager
+Initializing tgCPluginWindow
+ Creating font: tg_embedded_proggytiny_9_normal
+Initializing tgCPluginConsole
+ Creating quad: console_background
+ Creating quad: console_cursor
+ Creating font: console_font
+Initializing tgCPluginInput
+Initializing tgCPluginSkydome
+ Creating shader: tg_embedded_plugin_skydome_vertex
+ Creating shader: tg_embedded_plugin_skydome_pixel
+ Creating command: exit
+ Creating command: quit
+ Creating camera: 3D Camera
+ Creating camera: 2D Camera
+ Creating command: clock_delta_time_max
+ Creating command: clock_time_modifier
+ Creating command: clock_pause
+ Creating shader: shaders/d3d11/mesh_default_ambient_vertex
+ Creating shader: shaders/d3d11/mesh_default_ambient_pixel
+ Creating shader: shaders/d3d11/mesh_default_directional_vertex
+ Creating shader: shaders/d3d11/mesh_default_directional_pixel
+ Creating shader: shaders/d3d11/mesh_default_point_vertex
+ Creating shader: shaders/d3d11/mesh_default_point_pixel
+ Creating shader: shaders/d3d11/mesh_default_spot_vertex
+ Creating shader: shaders/d3d11/mesh_default_spot_pixel
+ Creating shader: shaders/d3d11/quad_default_vertex
+ Creating shader: shaders/d3d11/quad_default_pixel
+ Creating shader: shaders/d3d11/sprite_default_vertex
+ Creating shader: shaders/d3d11/sprite_default_pixel
+ Creating shader: shaders/d3d11/font_default_vertex
+ Creating shader: shaders/d3d11/font_default_pixel
+ Creating shader: shaders/d3d11/debug_default_vertex
+ Creating shader: shaders/d3d11/debug_default_pixel
+ Creating shader: shaders/d3d11/mesh_instance_ambient_vertex
+ Creating shader: shaders/d3d11/mesh_instance_ambient_pixel
+ Creating shader: shaders/d3d11/mesh_instance_directional_vertex
+ Creating shader: shaders/d3d11/mesh_instance_directional_pixel
+ Creating font: fonts/proggytiny_14_normal
+ Creating quad: Fade Quad
+ Creating quad: Load Quad
+ Creating thread: Load
+ Destroying thread: Load
+ Creating thread: Load
+ Creating light: Ambient
+ Creating world: worlds/demo_level
+ Creating texture: models/textures/d3d11/islands_d.dds
+ Creating texture: models/textures/d3d11/islands_n.dds
+ Creating texture: models/textures/d3d11/ground01_d.dds
+ Creating texture: models/textures/d3d11/ground01_n.dds
+ Creating texture: models/textures/d3d11/ground02_d.dds
+ Creating texture: models/textures/d3d11/ground02_n.dds
+ Creating world: worlds/empty_world
+ Creating model: models/orc
+ Creating texture: models/textures/d3d11/Orc_Ranger_Green.dds
+ Creating animation: animations/orc_idle
+ Creating animation: animations/orc_walk
+ Creating animation: animations/orc_run
+ Creating animation: animations/orc_attack
+ Creating animation: animations/orc_long_attack
+ Creating animation: animations/orc_hit
+ Creating animation: animations/orc_fall
+ Destroying texture: ground01_n
+ Destroying texture: ground02_n
+ Creating thread: Thread: Worker 0
+ Creating thread: Thread: Worker 1
+ Creating thread: Thread: Worker 2
+ Creating model: models/wall
+ Creating light: Directional
+ Destroying thread: Load
+ Creating thread: Load
+ Destroying world: empty_world
+ Destroying world: demo_level
+ Destroying texture: ground02_d
+ Destroying texture: ground01_d
+ Destroying texture: islands_d
+ Destroying texture: islands_n
+ Destroying thread: Thread: Worker 0
+ Destroying thread: Thread: Worker 1
+ Destroying thread: Thread: Worker 2
+ Destroying model: wall
+ Destroying animation: orc_idle
+ Destroying animation: orc_walk
+ Destroying animation: orc_run
+ Destroying animation: orc_attack
+ Destroying animation: orc_long_attack
+ Destroying animation: orc_hit
+ Destroying animation: orc_fall
+ Destroying model: orc
+ Destroying texture: Orc_Ranger_Green
+ Destroying light: Directional
+ Destroying light: Ambient
+ Destroying thread: Load
+ Creating thread: Load
+ Destroying thread: Load
+ Destroying quad: Load Quad
+ Destroying quad: Fade Quad
+ Destroying font: proggytiny_14_normal
+ Destroying texture: proggytiny_14_normal
+ Destroying shader: mesh_instance_directional_pixel
+ Destroying shader: mesh_instance_directional_vertex
+ Destroying shader: mesh_instance_ambient_pixel
+ Destroying shader: mesh_instance_ambient_vertex
+ Destroying shader: debug_default_pixel
+ Destroying shader: debug_default_vertex
+ Destroying shader: font_default_pixel
+ Destroying shader: font_default_vertex
+ Destroying shader: sprite_default_pixel
+ Destroying shader: sprite_default_vertex
+ Destroying shader: quad_default_pixel
+ Destroying shader: quad_default_vertex
+ Destroying shader: mesh_default_spot_pixel
+ Destroying shader: mesh_default_spot_vertex
+ Destroying shader: mesh_default_point_pixel
+ Destroying shader: mesh_default_point_vertex
+ Destroying shader: mesh_default_directional_pixel
+ Destroying shader: mesh_default_directional_vertex
+ Destroying shader: mesh_default_ambient_pixel
+ Destroying shader: mesh_default_ambient_vertex
+ Destroying camera: 2D Camera
+ Destroying camera: 3D Camera
+Shutting down tgCPluginSkydome
+ Destroying texture: tg_embedded_plugin_skydome_clouds2
+ Destroying texture: tg_embedded_plugin_skydome_clouds1
+ Destroying texture: tg_embedded_plugin_skydome_sky
+ Destroying shader: tg_embedded_plugin_skydome_pixel
+ Destroying shader: tg_embedded_plugin_skydome_vertex
+Shutting down tgCPluginInput
+Shutting down tgCPluginConsole
+ Destroying font: console_font
+ Destroying texture: console_font
+ Destroying quad: console_cursor
+ Destroying quad: console_background
+ Destroying font: tg_embedded_proggytiny_9_normal
+ Destroying texture: tg_embedded_proggytiny_9_normal
+ Destroying texture: tg_embedded_white
+ Destroying texture: tg_embedded_splash
+ Destroying texture: tg_embedded_lightblue
+ Destroying texture: tg_embedded_default
+ Destroying texture: tg_embedded_darkgrey
+ Destroying texture: tg_embedded_black
+Shutting down tgCPluginWindow
+Shutting down tgCCore
+Shutting down tgCDebugManager
+Shutting down tgCFontManager
+Shutting down tgCSplineGroupManager
+Shutting down tgCSpriteManager
+Shutting down tgCQuadManager
+Shutting down tgCAnimationManager
+Shutting down tgCModelManager
+Shutting down tgCWorldManager
+Shutting down tgCLightManager
+Shutting down tgCTextureManager
+Shutting down tgCShaderManager
+Shutting down tgCCameraManager
+Shutting down tgCFileSystem
+Shutting down tgCD3D11
