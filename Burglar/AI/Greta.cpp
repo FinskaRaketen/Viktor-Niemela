@@ -200,14 +200,7 @@ void AGreta::Patrol(float DeltaTime)
 	}
 	mMoveRequestResult = AIController->MoveTo(mMoveRequest);
 
-	if (GetActorLocation() == LastPosition)
-		return;
-
-	LastPosition.Z = GetActorLocation().Z;
-	FRotator Rotator = UKismetMathLibrary::FindLookAtRotation(LastPosition, GetActorLocation());
-	Rotator = FMath::RInterpTo(GetActorRotation(), Rotator, DeltaTime, RotationSpeed);
-	SetActorRotation(Rotator);
-	LastPosition = GetActorLocation();
+	MovementRotation(DeltaTime);
 }
 
 void AGreta::Hunting(float DeltaTime)
@@ -216,10 +209,7 @@ void AGreta::Hunting(float DeltaTime)
 	mMoveRequest.UpdateGoalLocation(TargetPoint);
 	mMoveRequestResult = AIController->MoveTo(mMoveRequest);
 
-	TargetPoint.Z = GetActorLocation().Z;
-	FRotator Rotator = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), TargetPoint);
-	Rotator = FMath::RInterpTo(GetActorRotation(), Rotator, GetWorld()->GetDeltaSeconds(), RotationSpeed);
-	SetActorRotation(Rotator);
+	MovementRotation(DeltaTime);
 
 	if (IsPlayerInVisibleRange())
 	{
@@ -601,7 +591,8 @@ void AGreta::Investigating(float DeltaTime)
 		 }
 	 }
 
-	//TODO: 30% CHANCE TO LOOK INSIDE CLOSET 
+	 MovementRotation(DeltaTime);
+
 }
 
 void AGreta::Action()
@@ -833,6 +824,18 @@ void AGreta::NewRandomMoveTo()
 	}
 }
 
+void AGreta::MovementRotation(float DeltaTime)
+{
+	if (GetActorLocation() == LastPosition)
+		return;
+
+	LastPosition.Z = GetActorLocation().Z;
+	FRotator Rotator = UKismetMathLibrary::FindLookAtRotation(LastPosition, GetActorLocation());
+	Rotator = FMath::RInterpTo(GetActorRotation(), Rotator, DeltaTime, RotationSpeed);
+	SetActorRotation(Rotator);
+	LastPosition = GetActorLocation();
+}
+
 // Called every frame
 void AGreta::Tick(float DeltaTime)
 {
@@ -1010,14 +1013,7 @@ void AGreta::Tick(float DeltaTime)
 				{
 					Magda->IsBarking = false;
 				}
-				if (GetActorLocation() == LastPosition)
-					return;
-
-				LastPosition.Z = GetActorLocation().Z;
-				FRotator Rotator = UKismetMathLibrary::FindLookAtRotation(LastPosition, GetActorLocation());
-				Rotator = FMath::RInterpTo(GetActorRotation(), Rotator, DeltaTime, RotationSpeed);
-				SetActorRotation(Rotator);
-				LastPosition = GetActorLocation();
+				MovementRotation(DeltaTime);
 			}
 		}
 	}
